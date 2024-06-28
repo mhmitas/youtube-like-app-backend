@@ -8,5 +8,8 @@
   },
   "author": "mh-mitas",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  }
 }
