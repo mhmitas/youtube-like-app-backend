@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
-import { DB_NAME } from "../constance.js";
+// import { DB_NAME } from "../constance.js";
 
 
 const connectDB = async () => {
     try {
-        const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
+        const connectionInstance = await mongoose.connect(`mongodb://localhost:27017/youtube_backend`)
 
         console.log(`MongoDB connected !! DB HOST: ${connectionInstance.connection.host}`)
 
